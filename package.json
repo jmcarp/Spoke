@@ -121,7 +121,7 @@
     "rollbar": "^0.6.2",
     "thinky": "^2.3.3",
     "transform-loader": "^0.2.3",
-    "twilio": "^2.11.0",
+    "twilio": "^3.9.0",
     "uuid": "^3.1.0",
     "webpack": "^1.13.1",
     "webpack-manifest-plugin": "^1.0.1",
