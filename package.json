@@ -35,7 +35,9 @@
     "dev-start": "nodemon -e js,jsx,md,mustache -w ./src --exec ./dev-tools/babel-run -- ./src/server",
     "generate-contacts": "./dev-tools/babel-run ./dev-tools/generate-contacts.js",
     "jest-test": "jest __test__/backend.test.js",
-    "dev": "nf start -w --procfile ./dev-tools/Procfile.dev"
+    "dev": "nf start -w --procfile ./dev-tools/Procfile.dev",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -92,7 +94,7 @@
     "humps": "^1.1.0",
     "isomorphic-fetch": "^2.2.1",
     "json-loader": "^0.5.4",
-    "knex": "^0.13.0",
+    "knex": "^0.14.3",
     "lodash": "^4.13.1",
     "material-ui": "^0.15.2",
     "minilog": "^3.0.1",
@@ -110,7 +112,7 @@
     "react-async-script": "^0.6.0",
     "react-chartjs": "^0.7.3",
     "react-dom": "^15.6.1",
-    "react-formal": "^0.18.5",
+    "react-formal": "^0.22.0",
     "react-router": "^2.5.2",
     "react-router-redux": "^4.0.5",
     "react-tap-event-plugin": "^2.0.0",
@@ -118,14 +120,15 @@
     "redux-thunk": "^2.1.0",
     "request": "^2.81.0",
     "rethink-knex-adapter": "^0.4.10",
-    "rollbar": "^0.6.2",
+    "rollbar": "^2.2.9",
     "thinky": "^2.3.3",
     "transform-loader": "^0.2.3",
-    "twilio": "^2.11.0",
+    "twilio": "^3.9.0",
     "uuid": "^3.1.0",
-    "webpack": "^1.13.1",
+    "webpack": "^2.2.0",
     "webpack-manifest-plugin": "^1.0.1",
-    "yup": "^0.19.0"
+    "yup": "^0.19.0",
+    "snyk": "^1.151.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
@@ -144,5 +147,6 @@
     "regenerator-runtime": "^0.10.5",
     "sqlite3": "^3.1.9",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
