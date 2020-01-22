@@ -92,7 +92,7 @@
     "humps": "^1.1.0",
     "isomorphic-fetch": "^2.2.1",
     "json-loader": "^0.5.4",
-    "knex": "^0.13.0",
+    "knex": "^0.14.3",
     "lodash": "^4.13.1",
     "material-ui": "^0.15.2",
     "minilog": "^3.0.1",
@@ -123,7 +123,7 @@
     "transform-loader": "^0.2.3",
     "twilio": "^2.11.0",
     "uuid": "^3.1.0",
-    "webpack": "^1.13.1",
+    "webpack": "^2.2.0",
     "webpack-manifest-plugin": "^1.0.1",
     "yup": "^0.19.0"
   },
